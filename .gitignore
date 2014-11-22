@@ -1,6 +1,8 @@
 
 .idea
 lib
+*.iml
+target
 
 #################
 ## Eclipse
