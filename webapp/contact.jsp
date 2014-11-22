@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,6 @@
 <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 <script src="js/jquery.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
@@ -29,42 +30,42 @@ jQuery(window).load(function () {
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+
 <![endif]-->
 </head>
 <body>
 <div class="spinner"></div>
 <!-- header -->
-<header>
-  <div class="container clearfix">
-    <div class="row">
-      <div class="span12">
-        <div class="navbar navbar_">
-          <div class="container">
-            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
-            <div class="nav-collapse nav-collapse_  collapse">
-              <ul class="nav sf-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li class="sub-menu"><a href="process.html">Process</a>
-                  <ul>
-                    <li><a href="#">Process 01</a></li>
-                    <li><a href="#">Process 02</a></li>
-                    <li><a href="#">Process 03</a></li>
-                  </ul>
-                </li>
-                <li class="active"><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+<s:include value="common/header.jsp"></s:include>
+<%--<header>--%>
+  <%--<div class="container clearfix">--%>
+    <%--<div class="row">--%>
+      <%--<div class="span12">--%>
+        <%--<div class="navbar navbar_">--%>
+          <%--<div class="container">--%>
+            <%--<h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>--%>
+            <%--<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>--%>
+            <%--<div class="nav-collapse nav-collapse_  collapse">--%>
+              <%--<ul class="nav sf-menu">--%>
+                <%--<li><a href="index.html">Home</a></li>--%>
+                <%--<li><a href="work.html">Work</a></li>--%>
+                <%--<li><a href="blog.html">Blog</a></li>--%>
+                <%--<li class="sub-menu"><a href="process.html">Process</a>--%>
+                  <%--<ul>--%>
+                    <%--<li><a href="#">Process 01</a></li>--%>
+                    <%--<li><a href="#">Process 02</a></li>--%>
+                    <%--<li><a href="#">Process 03</a></li>--%>
+                  <%--</ul>--%>
+                <%--</li>--%>
+                <%--<li class="active"><a href="contact.html">Contact</a></li>--%>
+              <%--</ul>--%>
+            <%--</div>--%>
+          <%--</div>--%>
+        <%--</div>--%>
+      <%--</div>--%>
+    <%--</div>--%>
+  <%--</div>--%>
+<%--</header>--%>
 <div class="bg-content">
   <!-- content -->
   <div id="content">
@@ -108,16 +109,19 @@ jQuery(window).load(function () {
         </article>
         <article class="span4">
           <h3>Contact info</h3>
-          <div class="map"> <a href="#"><img src="img/map.jpg" alt=""></a> </div>
+          <div class="map"> <a href="#"><img src="img/map.png" alt=""></a> </div>
           <address class="address-1">
-          <strong>Inbetwin Networks,<br>
-          Paud Phata, Road,<br>
-          Kothrud, Pune-38.</strong>
-          <div class="overflow"> <span>Mobile:</span>+91 12345 67890<br>
-            <span>Telephone:</span>+91 12345 67890<br>
-            <span>FAX:</span>+91 12345 67890 <br>
-            <span>E-mail:</span> <a href="#" class="mail-1">you@domain.com</a><br>
-            <span>Skype:</span> <a href="#" class="mail-1">@woohooo</a></div>
+          <strong>
+            some thing to do,<br>
+            some one to love, <br>
+            some thing to hope for.
+          </strong>
+          <div class="overflow"> <span>Mobile:</span>+86 186 1237 8866 <br>
+            <!--<span>Telephone:</span>+91 12345 67890<br>-->
+            <!--<span>FAX:</span>+91 12345 67890 <br>-->
+            <span>E-mail:</span><a href="mailto:along@alongvision.com" class="mail-1">al@alongvision.com</a><br>
+            <!--<span>Skype:</span> <a href="#" class="mail-1">@woohooo</a>   -->
+          </div>
           </address>
         </article>
       </div>
@@ -136,6 +140,7 @@ jQuery(window).load(function () {
     <div class="privacy pull-left">&copy; 2013 | <a href="http://www.dzyngiri.com">Dzyngiri</a> | Demo Illustrations by <a href="http://justinmezzell.com">Justin Mezzell</a></div>
   </div>
 </footer>
+
 <script src="js/bootstrap.js"></script>
 </body>
 </html>

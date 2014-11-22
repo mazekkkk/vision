@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated  by Hibernate Tools 3.2.0.CR1 -->
+<hibernate-mapping>
+    <!--<class name="com.al.vision.model.NationalData" table="national_data">-->
+        <!--<meta attribute="extends" inherit="false">com.rgi.core.component.BaseBean</meta>-->
+
+        <!--<id name="ndId" type="java.lang.Integer">-->
+            <!--<column name="nd_id" />-->
+
+            <!--<generator class="native" />-->
+        <!--</id>-->
+
+        <!--<property name="parentId" type="java.lang.Integer">-->
+            <!--<column name="parent_id" />-->
+        <!--</property>-->
+
+        <!--<property name="ndDate" type="date">-->
+            <!--<column name="nd_date" length="10" />-->
+        <!--</property>-->
+
+        <!--<property name="parentType" type="string">-->
+            <!--<column name="parent_type" length="50" />-->
+        <!--</property>-->
+
+        <!--<property name="ndType" type="string">-->
+            <!--<column name="nd_type" length="50" />-->
+        <!--</property>-->
+
+        <!--<property name="ndValue" type="string">-->
+            <!--<column name="nd_value" length="30" />-->
+        <!--</property>-->
+    <!--</class>-->
+</hibernate-mapping>
+

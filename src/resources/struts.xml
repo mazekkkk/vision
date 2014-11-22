@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.custom.i18n.resources" value="global" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.action.extension" value="asp"/>
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"  />
+
+    <package name="root_action" extends="struts-default">
+
+    </package>
+    <include file="struts/struts-vision.xml"></include>
+</struts>
